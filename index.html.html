@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food Web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+
+  <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <ul class=" justify-content-left mb-md-0"> 
+          <img src="image/bowl-food-solid.svg" alt="mdo" width="50px" height="40px" >
+        </ul>
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="foodDishes.html" class="nav-link px-2 link-dark">Overview</a></li>
+          <li><a href="foodDishes.html" class="nav-link px-2 link-dark">Inventory</a></li>
+          <li><a href="foodDishes.html" class="nav-link px-2 link-dark">Customers</a></li>
+          <li><a href="index.html" class="nav-link px-2 link-dark">Home</a></li>
+
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="40" height="40" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small">
+            <li><a class="dropdown-item" href="foodDishes.html">New project...</a></li>
+            <li><a class="dropdown-item" href="foodDishes.html">Settings</a></li>
+            <li><a class="dropdown-item" href="foodDishes.html">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="foodDishes.html">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <!-- slider -->
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="image/cover pic 1.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Live coal Handie</h1>
+            <p>The Flavour of Taste</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image/cover pic 2.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Sandwich with Bandwich</h1>
+            <p>Some Fast food Chaska</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="image/cover pic 3.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Chicken kirahi</h1>
+            <p>Fire on Chicken with desi Chatkhara</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- cards -->
+    <div class="container">
+      <h2 class="my-4 text-center">Famouse Dishes In Your Area</h2>
+
+      <div class="row justify-content-center">
+        <div data-aos="fade-up" class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.unsplash.com/photo-1499028344343-cd173ffc68a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Knify Ham Burger</h5>
+              <p class="card-text">
+              Some Burger Eat Burgers.
+              </p>
+              <a href="fooddetail.html" class="btn btn-primary">See Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.pexels.com/photos/3535383/pexels-photo-3535383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Steaky Steak</h5>
+              <p class="card-text">
+               Tendor in Our Tendry Steak.
+              </p>
+              <a href="fooddetail.html" class="btn btn-primary">See Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Simon Fish</h5>
+              <p class="card-text">
+              Freash Fish with Omega 3. 
+              </p>
+              <a href="fooddetail.html" class="btn btn-primary">See Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="col-12 col-md-6 col-lg-4 col-xl-3 my-2">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ribby Ribs</h5>
+              <p class="card-text">
+               Fire on Rib.
+              </p>
+              <a href="fooddetail.html" class="btn btn-primary">See Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<div class="iframe">
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/AQvKj2rU5Gk" title="Street Food IFTAR in Karachi for RAMADAN!!! EXTREME Chicken Chargha + IFTARI Street Food in Pakistan" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/wNCPgIVz15c" title="American Eats Pakistan!! From Street Food to Strange Food!! (Full Documentary)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+<div>
+  <h1><center>Our location</center></h1>
+</div>
+<div class="class="d-flex justify-content-center">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d115765.72932690213!2d66.945024!3d24.943001599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1674396756669!5m2!1sen!2s" width="1280" height="720" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+      
+
+      
+<nav aria-label="...">
+  <ul class="pagination d-flex justify-content-center">
+    <li class="page-item ">
+      <a class="page-link" href="index.html">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="foodDishes.html">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="foodDishes.html">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="foodDishes.html">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="foodDishes.html">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+<div class="bg-dark d-flex justify-content-around px-2 py-3">
+  <p class=".leads my-0 text-white">Copy Right All Right Reserved</p>
+
+  <span>
+    <a href="https://twitter.com/officialswit?lang=en">
+      <img src="icons/twitter.svg" height="30px" width="30px" alt="" />
+    </a>
+    <a href="https://twitter.com/officialswit?lang=en">
+      <img src="icons/facebook.svg" height="30px" width="30px" alt="" />
+    </a>
+    <a href="https://twitter.com/officialswit?lang=en">
+      <img src="icons/instagram.svg" height="30px" width="30px" alt="" />
+    </a>
+  </span>
+</div>
+    
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
